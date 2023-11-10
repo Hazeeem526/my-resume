@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>My Online Resume</title>
+
+    <style>
+
+img{
+    width: 100px;  
+    
+}
+
+
+
+
+    .image-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  width: 200px;          /* Set the width for Image 1 */
+  border: 2px solid rgb(0, 0, 0); /* Add a red border to Image 1 */
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Increase the scale to 110% on hover */
+  z-index: 1; /* Bring the image to the top layer on hover (optional) */
+}
+    
+
+
+
+
+body {
+    background-image: url('wallpaper4.jpg');
+    background-size: cover; /* Adjusts the image size to cover the entire screen */
+    background-attachment: fixed; /* Makes the background fixed */
+    background-repeat: no-repeat;
+     font-family: Arial, sans-serif;
+     
+}
+
+*,html,body{
+    padding :0;
+    margin: 0;
+    font-family:"Roboto",sans-serif;
+
+}
+
+.cointaner{
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    display:flex;
+    width:100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    font-size:20px;
+
+}
+
+.namaawal{
+  color: rgb(0, 255, 221);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.namaakhir{
+    color:rgb(255, 255, 255);
+
+}
+
+.merek{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    color: white;
+    padding-right: 18px;
+}
+        
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 10px;
+}
+
+.navigation > li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+
+}
+
+.navigation > li>a:hover{
+  color: rgb(0, 255, 221);
+    transition: all.5 ease-in-out;
+
+}
+
+.navigation > li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 3px solid #000000;
+border-radius: 10px;
+background-image: url("prog.jpeg");
+background-color: bisque;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  align-items: center; /* Vertically center the icons */
+  gap: 20px; /* Adjust the spacing between icons */
+}
+
+.icon {
+  width: 80px; /* Adjust the size of the icons as needed */
+  transition: transform 0.2s; /* Add a smooth transition effect for the icons */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge the icon when hovering */
+  /* You can
+   also change the color, add shadows, or apply other effects here */
+}
+
+.copyright-notice {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.6; /* Adjust the opacity as needed */ 
+}
+
+.copyright-notice {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+
+/*clock digital*/
+.clock {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(28, 195, 189);
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#digital-clock {
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+
+/*image hover*/
+.image-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Increase the scale to 110% on hover */
+  z-index: 1; /* Bring the image to the top layer on hover (optional) */
+}
+    </style>
+
+
+
+<body>
+
+<div class="cointaner">
+    <nav class="isi">
+        <div class="merek">
+            <div class="namaawal">Portfolio</div>
+            <div class="namaakhir">Hazim</div>
+        </div>
+    </nav>
+
+
+<ul class="navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="skill.html">Skill</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+<li><a href="contactme.html">Contact</a>
+  
+</li>
+<div class="clock">
+  <time id="clock">12:00:00</time>
+</div>
+</ul>
+</nav>
+</div>
+</body>
+
+<br>
+
+
+<div class="container">
+ 
+<center><h2>My Profile</h2> </center><br>
+<center><img src= "C:\Users\user\Desktop\SEM 5 ALL WORK\BITM2113 WEB APPLICATION\WEEK 2\RESUME/hazim2.jpg"  alt="hazim2" class = "image-container"></center> </td>
+<table>
+<tr><td><b>Name : Muhammad Hazim Bin Nasrun Adil</td></tr>
+<tr><td>Adress:No 27,Lorong Bangi Perdana,Bangi Perdana Putra,43650,Kajang,Selangor.</td></tr>
+<tr><td>Email-Adress:MuhammadHazim261@gmail.com</td></tr>
+<tr><td>Phone Number:0172635778</td></tr>
+<center><p class = "copyright-notice">Copyright@Hazim | 2023</p></center><br>
+
+<center>
+<div class="social-icons">
+    <a href="https://www.facebook.com/muhammad.hazim.54772728/" target="_blank">
+      <img src="C:\Users\user\Desktop\SEM 5 ALL WORK\BITM2113 WEB APPLICATION\WEEK 2\RESUME/fb.png" alt="Facebook" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/muhammad-hazim-652b2b262/" target="_blank">
+      <img src="C:\Users\user\Desktop\SEM 5 ALL WORK\BITM2113 WEB APPLICATION\WEEK 2\RESUME/linkedin.png" alt="YouTube" class="icon">
+    </a>
+    <a href="https://www.twitter.com/" target="_blank">
+      <img src="C:\Users\user\Desktop\SEM 5 ALL WORK\BITM2113 WEB APPLICATION\WEEK 2\RESUME/twt.png" alt="Twitter" class="icon">
+    </a>
+    <a href="https://instagram.com/hazeeem___?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+        <img src="C:\Users\user\Desktop\SEM 5 ALL WORK\BITM2113 WEB APPLICATION\WEEK 2\RESUME/ig.png" alt="Instagram" class="icon">
+      </a>
+  </div></center>
+<br>
+
+<script>
+  function updateClock() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    clockElement.textContent = timeString;
+  }
+
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+
+  // Initial call to set the clock display
+  updateClock();
+</script>
+
+
+<hr><br>
+
+
+
+
+</body>
+</html>

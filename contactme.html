@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <style>
+
+        img{
+            width: 200px;
+            
+        }
+        
+        body {
+            background-image: url('wallpaper4.jpg');
+            background-size: cover; /* Adjusts the image size to cover the entire screen */
+            background-attachment: fixed; /* Makes the background fixed */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        *,html,body{
+    padding :0;
+    margin: 0;
+    font-family:"Roboto",sans-serif;
+
+}
+
+.cointaner{
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    display:flex;
+    width:100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    font-size:20px;
+
+}
+
+.namaawal{
+    color: rgb(0, 255, 221);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.namaakhir{
+    color:rgb(255, 255, 255);
+
+}
+
+.merek{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    color: white;
+    padding-right: 18px;
+}
+        
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 10px;
+}
+
+.navigation > li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+
+}
+
+.navigation > li>a:hover{
+    color: rgb(0, 255, 221);
+    transition: all.5 ease-in-out;
+
+}
+
+.navigation > li>a{
+    text-decoration: none;
+    color: white;
+}
+        
+        
+            </style>
+
+<style>
+    /* Style the calendar */
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+    td {
+        background-color: #f0f0f0;
+    }
+
+    .container {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 3px solid #000000;
+border-radius: 10px;
+background-color: bisque;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+background-image: url("prog.jpeg");
+}
+
+.form1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+.copyright-notice {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.6; /* Adjust the opacity as needed */
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin for spacing */
+}
+
+.clock {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(28, 195, 189);
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#digital-clock {
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+
+
+
+
+</style>
+
+
+
+<body>
+
+    <div class="cointaner">
+        <nav class="isi">
+            <div class="merek">
+                <div class="namaawal">PORTFOLIO</div>
+                <div class="namaakhir">Hazim</div>
+            </div>
+        </nav>
+    
+    <ul class="navigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="Portfolio.html">Portfolio</a></li>
+    <li><a href="contactme.html">Contact</a>
+    </li>
+    <div class="clock">
+        <time id="clock">12:00:00</time>
+    </ul>
+    </nav>
+    </div>
+    </body><br>
+
+<div class="container">
+    <form id="myForm">
+<h3>Contact Me</h3><br>
+<h4>Please add your contact details here</h4><br>
+
+<form action="contactme.html" method="post">
+    <table>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Your Full name" autofocus>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Your Age"><br><br>
+        <form>
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <table>
+                <thead>
+                  
+                </tbody>
+            </table>
+        </form>
+
+        <label for="no">Mobile Number:</label>
+        <input type="no" id="no" name="no" placeholder="01-xxxxxxx"><br><br>
+
+        <p>
+            Country:
+            <select name = "Country">
+            <option> Malaysia </option>
+            <option> Indonesia </option>
+            <option> Singapore </option>
+            <option> Brunei </option>
+            <option> Thailand </option>
+            </select>
+        </p><br>
+
+        <p>
+            Gender:
+            <input type = "radio" name = "age"
+            value = "Male" checked = "checked"> Male
+            <input type = "radio" name = "age"
+            value = "Female"> Female
+            </p><br>
+            <label for="email">Email:</label>
+            <input type="email" id="age" name="age" placeholder="Your Email"><br><br>
+
+            <label for="email">Personal/Company Website:</label>
+            <input required = "required" type="email" id="age" name="age" placeholder="Your Personal or Company Website"><br>
+            <br>
+          
+                Prefered method of contact
+                <input type = "checkbox" name = "phone"
+                value = "phone" checked = "checked">
+                Phone
+                <input type = "checkbox" name = "email"
+                value = "email"> Email <br>
+                
+                <textarea placeholder="Enter your text here"  required= "required" name = "aspirations" rows="4" cols="50"></textarea><br>
+
+    </table>
+</form> 
+
+
+    <form id="myForm">
+        <input type="submit" value="Submit" id="submitButton">
+        <input type="reset" value="Reset" id="resetButton">
+    </form>
+  </form><br>
+
+  <script>
+    // Get references to the buttons and the form
+    var submitButton = document.getElementById("submitButton");
+    var resetButton = document.getElementById("resetButton");
+    var myForm = document.getElementById("myForm");
+
+    // Add an event listener to the Submit button
+    submitButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the form from actually submitting
+        var inputValue = "Terima Kasih atas kesudian anda mengisi maklumat";
+        alert( inputValue);
+    });
+
+    // Add an event listener to the Reset button
+    resetButton.addEventListener("click", function() {
+        myForm.reset(); // Reset the form, clearing the input field
+    });
+</script>
+
+  <script>
+    function updateClock() {
+      const clockElement = document.getElementById('clock');
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      clockElement.textContent = timeString;
+    }
+  
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+  
+    // Initial call to set the clock display
+    updateClock();
+  </script>
+
+
+
+
+<center><p class = "copyright-notice">Copyright@Hazim | 2023</p></center><br>
+</body>
+</html>

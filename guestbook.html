@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Color Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    table {
+        background-color: #EFEFEF; /* Your desired background color */
+      margin: 20px auto; /* Center the table */
+      float: center;
+      border-collapse: separate; /* Collapse borders for a single line */
+    }
+    
+    th, td {
+      padding: 10px;
+      border: 1px solid black; /* Border for table cells */
+      vertical-align: top ; /* Align content at the top */
+      text-align: left; /* Align content to the left */
+    }
+    
+    .selectors {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    #result {
+    clear: both; /* Clear floats */
+    margin-top: 20px;
+    text-align: left; /* Align the content to the left */
+    }
+
+    *,html,body{
+    padding :0;
+    margin: 0;
+    font-family:"Roboto",sans-serif;
+
+}
+
+.cointaner{
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    display:flex;
+    width:100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    font-size:20px;
+
+}
+
+.namaawal{
+  color: rgb(0, 255, 221);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.namaakhir{
+    color:rgb(255, 255, 255);
+
+}
+
+.merek{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    color: white;
+    padding-right: 18px;
+}
+        
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 10px;
+}
+
+.navigation > li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+
+}
+
+.navigation > li>a:hover{
+  color: rgb(0, 255, 221);
+    transition: all.5 ease-in-out;
+
+}
+
+.navigation > li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 3px solid #000000;
+border-radius: 10px;
+background-image: url("prog.jpeg");
+background-color: bisque;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  align-items: center; /* Vertically center the icons */
+  gap: 20px; /* Adjust the spacing between icons */
+}
+
+.icon {
+  width: 80px; /* Adjust the size of the icons as needed */
+  transition: transform 0.2s; /* Add a smooth transition effect for the icons */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge the icon when hovering */
+  /* You can
+   also change the color, add shadows, or apply other effects here */
+}
+
+.copyright-notice {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.6; /* Adjust the opacity as needed */ 
+}
+
+.copyright-notice {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+
+/*clock digital*/
+.clock {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(28, 195, 189);
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#digital-clock {
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+
+/*image hover*/
+.image-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Increase the scale to 110% on hover */
+  z-index: 1; /* Bring the image to the top layer on hover (optional) */
+}
+  </style>
+</head>
+<body>
+    <div class="cointaner">
+        <nav class="isi">
+            <div class="merek">
+                <div class="namaawal">Portfolio</div>
+                <div class="namaakhir">Hazim</div>
+            </div>
+        </nav>
+    
+    
+    <ul class="navigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="Portfolio.html">Portfolio</a></li>
+    <li><a href="contactme.html">Contact</a>
+    <li><a href="guestbook.html">Guestbook</a>
+    
+      
+    </li>
+    <div class="clock">
+      <time id="clock">12:00:00</time>
+    </div>
+    </ul>
+    </nav>
+    </div>
+    </body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="selectors">
+                    <select name="color" id="color" onchange="change()">
+                        <option value="#b2d8d8">Aqua</option>
+                        <option value="#98fb98">Green</option>
+                        <option value="#ffb347">Orange</option>
+                        <option value="#fffacd">Yellow</option>
+                        <option value="#c3a6ff">Purple</option>
+                        <option value="#d3d3d3">Gray</option>
+                        <option value="#ffc0cb">Pink</option>
+                        <option value="#e6e6fa">Lavender</option>
+                        <option value="#f0e68c">Khaki</option>
+                        <option value="#87ceeb">Sky Blue</option>
+                        <option value="white" selected>White</option>
+
+                    </select>
+                    
+                    <select name="siteselector" size="1" onchange="site(this.value)">
+                        <option value="http://www.utem.edu.my">UTem</option>
+                        <option value="http://ftmk.utem.edu.my">FTMK</option>
+                        <option value="http://ulearn.utem.edu.my">ULearn</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <label>
+                        <input type="text" name="firstName" id="firstName" />
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <label>
+                        <input type="text" name="lastName" id="lastName" />
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <label>
+                        <input type="text" name="address" id="address" />
+                    </label>
+                </td>
+            </tr>      
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                </td>
+            </tr>       
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <label for="email">
+                        <input type="email" id="email" name="email" />
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td>
+                    <label for="comments">
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </label>
+                </td>
+            </tr>   
+            <tr>
+                <td>My Favorite Site:</td>
+                <td>
+                    <label for="favoriteSite">
+                        <input type="checkbox" name="favoriteSite" value="http://www.utem.edu.my">UTeM Page<br />
+                        <input type="checkbox" name="favoriteSite" value="https://www.facebook.com/">Facebook Page<br />
+                        <input type="checkbox" name="favoriteSite" value="https://www.google.com/">Google Page<br />
+                        </td>  
+                    </label>
+                </td>
+            </tr>
+            <td><button onclick="process()">Process</button>
+                <button onclick="clearForm()">Clear</button></td>
+            <td>
+                <center>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                          <img src="fb.png" alt="Facebook" class="icon">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                          <img src="yt.png" alt="YouTube" class="icon">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                          <img src="twt.png" alt="Twitter" class="icon">
+                        </a>
+                        <a href="https://msng.link/o?hazeeem___=ig" target="_blank">
+                            <img src="ig.png" alt="Instagram" class="icon">
+                          </a>
+                      </div></center><br>   
+            </td>      
+            
+        </tr>
+       
+    </table>
+
+
+    <div id="result"></div>
+  
+    <script>
+        function change() {
+            var selectedColor = document.getElementById("color").value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+
+        function site(val) {
+            location.href = val;
+        }
+
+        function process() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var address = document.getElementById("address").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var email = document.getElementById("email").value;
+            var comments = document.getElementById("comments").value;
+            var favoriteSites = document.querySelectorAll('input[name="favoriteSite"]:checked');
+
+            var result = "<h2>User Information:</h2>";
+            var currentDate = new Date().toLocaleString();
+            result += "<p>Date: " + currentDate + "</p>";
+            result += "<p>First Name: " + firstName + "</p>";
+            result += "<p>Last Name: " + lastName + "</p>";
+            result += "<p>Address: " + address + "</p>";
+            result += "<p>Gender: " + (gender ? gender.value : "Not specified") + "</p>";
+            result += "<p>Email: " + email + "</p>";
+            result += "<p>Comments: " + comments + "</p>";
+            
+            result += "<p>Favorite Sites:</p>";
+            result += "<ul>";
+            favoriteSites.forEach(function(site) {
+                result += "<li>" + site.value + "</li>";
+            });
+            result += "</ul>";
+
+            document.getElementById("result").innerHTML = result;
+        }
+        function clearForm() {
+            var inputs = document.getElementsByTagName("input");
+            var textareas = document.getElementsByTagName("textarea");
+
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type === "text" || inputs[i].type === "email" || inputs[i].type === "radio" || inputs[i].type === "checkbox") {
+                    inputs[i].value = "";
+                    if (inputs[i].type === "radio" || inputs[i].type === "checkbox") {
+                        inputs[i].checked = false;
+                    }
+                }
+            }
+
+            for (var i = 0; i < textareas.length; i++) {
+                textareas[i].value = "";
+            }
+
+            document.getElementById("result").innerHTML = "";
+        }
+
+
+       
+            function updateClock() {
+              const clockElement = document.getElementById('clock');
+              const now = new Date();
+              const hours = String(now.getHours()).padStart(2, '0');
+              const minutes = String(now.getMinutes()).padStart(2, '0');
+              const seconds = String(now.getSeconds()).padStart(2, '0');
+              const timeString = `${hours}:${minutes}:${seconds}`;
+              clockElement.textContent = timeString;
+            }
+          
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+          
+            // Initial call to set the clock display
+            updateClock();
+          </script>
+
+        
+    </script>
+    <center><p class = "copyright-notice">Copyright@Hazim | 2023</p></center><br>
+</body>
+</html>
